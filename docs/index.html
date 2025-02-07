@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Srinergy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Navigation Bar -->
+<div class="bar theme-dark left-align">
+   <a class="bar-item button right theme-dark" href="javascript:void(0);" onclick="openNav()"></a>
+   <a href="#" class="bar-item button" style="background-color: #CD201F; color: white; display: flex; align-items: center; gap: 8px; padding: 10px; border-radius: 10px">
+    <img src="youtube_icon.png" alt="Home Icon" style="width: 20px; height: 20px;">Home</a>
+   <a href="#objectives" class="bar-item button">Objective</a>
+   <a href="#data-source" class="bar-item button">Data Source</a>
+   <a href="#data-processing" class="bar-item button">Data Processing</a>
+   <a href="#results-&-analysis" class="bar-item button">Results & Analysis</a>
+   <a href="#timeline" class="bar-item button">Timeline</a>
+   <a href="#team" class="bar-item button">Team</a>
+</div>
+   
+<div style="padding: 40px 0px;"></div>
+   
+<!-- Header -->
+<h1 class = "odd-section" style="text-align: center; padding: 50px 0px;"><strong>DS105A: Project Srinergy</strong></h1>
+
+<!-- Objective -->
+<div class="quarter even-section" style="padding: 50px 0px;" id="objectives">
+<h1><strong>Objective</strong></h1>
+<h3><em>"How does upload frequency and subscriber base size impact average engagement of videos across different YouTube content categories?"</em></h3>
+</div>
+
+<!-- Data Source -->
+<div class="quarter odd-section" style="padding: 50px 0px;" id="data-source">
+  <h1><strong>Data Source</strong></h1>
+  <h2><em>What data do we use?</em></h2>
+  <div style="position: relative;">
+    <img src="ds105 homepage.png" alt="home" 
+         style="width: 80%; min-height: 350px; max-height: 800px; display: block; margin: auto; padding: 20px 20px">
+  </div>
+  <p>Firstly, we decided to use 3 diverse categories <strong>(Education, Gaming, Food)</strong> to get a more holistic understanding of our objective. </p>
+  <p>At the same time, within each category, we chose creators that all had relatively different sized subscriber bases (1 small-sized creator, 1 medium-sized creator and 1 large-sized creator).</p>
+  <p>It is also important to note that the criteria we used to determine whether a creator was "small" or "large" was based on its relative subscriber base compared to all the creators in that category</p>
+  <div style="display: flex; justify-content: space-between; text-align: center;">
+    <div style="width: 40%;">
+      <p><strong>Gaming</strong> <br> Greg Renko Gaming <strong>(Small)</strong> <br> MM7Games <strong>(Medium)</strong> <br> MrBeast Gaming <strong>(Large)</strong> </p>
+    </div>
+    <div style="width: 40%;">
+      <p><strong>Food</strong> <br> Food Review UK <strong>(Small)</strong> <br> TheReportOfTheWeek <strong>(Medium)</strong> <br> Mark Wiens <strong>(Large)</strong></p>
+    </div>
+    <div style="width: 40%;">
+      <p><strong>Education</strong> <br> Sam O'Nella Academy <strong>(Small)</strong> <br> OverSimplified <strong>(Medium)</strong> <br> Veritasium <strong>(Large)</strong> </p>
+    </div>
+  </div>
+</div>
+
+<!-- Data Processing -->
+<div class="quarter even-section" style="padding: 50px 0px;" id="data-processing">
+  <div class="container">
+  <h1><strong>Data Processing</strong></h1>
+  <h2><em>What categories are we focusing on?</em></h2>
+  <img src="data processing.png" alt="Data Processing" style="width:75%">
+  <p>In order to answer our objective, we had to define an <strong>engagement metric</strong>. We defined it as the interaction a video receives.<br>Quantitatively, we calculated it as the <em>proportion of the number of likes and comments a video receives, divided by the number of views it receives</em></p>
+  <p>Using these primary ways YouTube users can actively participate with content will help us better understand <strong>how much users actively engage with the content they consume</strong>. Moroever, its <strong>quantitative nature</strong> helps us to interpret engagement easier graphically.</p>
+  </div>
+</div>
+
+<!-- Results & Analysis -->
+<div class="quarter odd-section" style="padding: 50px 0px;" id="results-&-analysis">
+  <div class="container">
+  <h1><strong>Results & Analysis</strong></h1>
+  <h2><em>What does the data tell us?</em></h2>
+  <h2 style="text-align: left;"><strong>Hypotheses:</strong></h2>
+  <p style="text-align: left;"><em>1. Upload frequency holds <strong>limited significance</strong> for average engagement</em> - High quality videos may require a lot of time to make, thus low frequency doesn't necessarily mean low engagement.<br><br><em>2. Subscriber base is <strong>strongly correlated</strong> with engagement</em> - The Youtube algorithm will naturally show you more of their videos and YouTubers with more subscribers will retain more viewers, hence more engagement.</p>
+  </div>
+  <div class="container" style="padding-top: 10px; padding-bottom: 24px;">
+   <h2 style="text-align: left;"><strong>Results:</strong></h2>
+   <div style="display: flex; align-items: center; justify-content: space-between;">
+    <img src="views_vs_size.png" alt="views vs size" style="width: 50%; margin-right: 20px;">
+    <div style="width: 50%;">
+        <h3><strong><u>Visualisation 1: Distinct Viewing Patterns by Category and Channel Size</u></strong></h3>
+        <p style="text-align: left;">This graph illustrates how the average view count on the channels correlates with its relative size (subscriber count) in its category</p>
+        <h4 style="text-align: left;"><strong>Key Findings</strong></h4>
+        <p style="text-align: left;"><em>1. Each content category shows distinct viewing patterns across channel sizes:</em></p>
+        <p style="text-align: left;">Average views are <strong>generally positively correlated with channel size in Food and Gaming categories</strong>. However, the trend appears less consistent in the <strong>Educational</strong> category, with the small and medium channels having <strong>marginally more average viewership than the larger channel</strong></p>
+        <p style="text-align: left;"><em>2. Magnitude of impact of channel size varies by content type:</em></p>
+        <p style="text-align: left;">Comparing between the Food and Gaming categories, the average viewership is <strong>more strongly correlated in the Food category than the Gaming category</strong> (<em>steeper gradient of increase in viewership</em> from smaller to larger channel)</p>
+    </div>
+   </div>
+   </div>
+   <div class="container" style="padding-top: 24px; padding-bottom: 24px;">
+   <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="width: 50%;">
+        <h3><strong><u>Visualisation 2: Engagement Rate by Subscriber Count</u></strong></h3>
+        <p style="text-align: left;">This graph illustrates how the engagement rate of these channels correlates with its size (subscriber count) in its category</p>
+        <h4 style="text-align: left;"><strong>Key Findings</strong></h4>
+        <p style="text-align: left;"><em>1. Smaller channels often achieve higher engagement rates:</em></p>
+        <p style="text-align: left;">From the graph, we can see that the channels with the highest engagement rates (above 3%) were <strong>smaller channels in their respective categories</strong> (Gaming - MM7Games, Food - TheReportOfTheWeek, Education - Sam O'Nella Academy). Furthermore, the larger channels tend to be on the <strong>lower end of the engagement rate</strong>(~2%)</p>
+        <p style="text-align: left;"><em>2. The influence on the relative engagement patterns varies by content category:</em></p>
+        <p style="text-align: left;">For the <strong>Gaming</strong> category, the engagement rate is <strong>relatively the same</strong> (2-3%). Meanwhile, for the <strong>Educational</strong> category, there is a <strong>minor difference</strong> between engagement rates of the channels with the highest engagement rate (MM7Games - ~3%) and lowest engagement rate (MrBeast Gaming - ~2%). However, for the <strong>Food</strong> category, there is a <strong>relatively large difference</strong> between engagement rates of the channels, especially between TheReportOfTheWeek(~5%) and Mark Wiens (~2%).</p>
+    </div>
+    <img src="engagement_vs_subcount.png" alt="engagement vs subcount" style="width: 50%; margin-left: 20px;">
+   </div>
+   </div>
+   <div class="container" style="padding-top: 24px; padding-bottom: 24px;">
+   <div style="display: flex; align-items: center; justify-content: space-between;">
+    <img src="engagement_vs_uploads.png" alt="engagement vs upload frequency" style="width: 50%; margin-right: 20px;">
+    <div style="width: 50%;">
+        <h3><strong><u>Visualisation 3: Engagement Rate by Upload Frequency</u></strong></h3>
+        <p style="text-align: left;">This graph illustrates how the engagement rate of these channels correlates with its upload frequency (days between uploads)</p>
+        <h4 style="text-align: left;"><strong>Key Findings</strong></h4>
+        <p style="text-align: left;"><em>1. Engagement rate generally decreases as upload frequency decreases (i.e. days between uploads increases):</em></p>
+        <p style="text-align: left;">However, correlation between upload frequency and engagement is weak, and the best-fit line has a <strong>gentle gradient</strong>. This suggests that while frequent uploads may contribute to engagement, <strong>other factors may also play a significant role</strong>.
+        <p style="text-align: left;"><em>2. There are notable outliers that exist:</em></p>
+        <p style="text-align: left;">Mark Wiens maintains a high upload frequency but experiences <strong>relatively low engagement</strong>. This implies that factors such as <strong>audience retention and content uniqueness</strong> might override the effects of upload frequency in influencing engagement.</p>
+    </div>
+   </div>
+   </div>
+   <div class="container" style="padding-top: 24px; padding-bottom: 10px;">
+   <h2 style="text-align: left;"><strong>Overall Analysis:</strong></h2>
+   <p style="text-align: left;">Based on the findings from Graphs 1, 2, and 3, we can conclude the following about the impact of upload frequency and subscriber base size on average engagement across YouTube content categories:</p>
+   <p style="text-align: left;"><em>1. Channel size influences average views but not necessarily engagement.</em></p>
+   <p style="text-align: left;">Larger channels in the <strong>Food</strong> and <strong>Gaming</strong> categories tend to have <strong>higher average views</strong>, but <strong>engagement rate does not consistently scale with channel size</strong> (Graph 1 & 2).<br>Meanwhile, <strong>Educational</strong> channels <strong>do not exhibit a strong correlation</strong> between size and views, implying other factors drive their success.</p>
+   <p style="text-align: left;"><em>2. Engagement rate is not strongly linked to subscriber count.</em></p>
+   <p style="text-align: left;">Smaller channels often achieve <strong>higher engagement rates</strong>, especially in the Educational category (Graph 2).<br>Medium-sized channels in Gaming and Food also perform well in engagement, suggesting that a <strong>highly engaged audience matters more than a large subscriber base.</strong></p>
+   <p style="text-align: left;"><em>3. Higher upload frequency generally leads to higher engagement. (Graph 3)</em></p>
+   <p style="text-align: left;">However, exceptions such as Mark Wiens show that <strong>frequent uploads do not guarantee high engagement</strong>, indicating that content quality and audience retention are more crucial factors.</p>
+   </div>
+   <div class="container" style="padding-top: 10px; padding-bottom: 24px;">
+   <h2 style="text-align: left;"><strong>Potential Issues with Data Analysis:</strong></h2>
+   <p style="text-align: left;"><em>1. Overlap between number of likes and number of comments</em></p>
+   <p style="text-align: left;">Based on our earlier established formula to calculate engagement rate, one issue that could affect these values are <strong>overlaps between number of likes and number of comments</strong> i.e. the same user that does both, or long comment chains involving 2-3 users. Such instances would magnify the proportion of likes and comments with respect to views, thus impacting the <strong>overall magnitude of the engagement rate.</strong></p>
+   <p style="text-align: left;"><em>2. Existence of Outliers i.e. viral videos</em></p>
+   <p style="text-align: left;">There might be some videos made by the channels/creators that go especially viral, and thus <strong>skew the average values of our engagement metric</strong>. For example, a small channel like TheReportOfTheWeek could have an average viewership of ~500k per video, but a few of his viral videos obtained ~10m views, which would significantly skew the engagement rate values that we use.</p>
+   <p style="text-align: left;"><em>3. Limited Sample Size & Selection Bias</em></p>
+   <p style="text-align: left;">To ensure a detailed analysis, we only collected data from three channels per category. This small sample size may <strong>introduce substantial random errors</strong>, making it difficult to generalize findings to all channels within a category.<br><br>Moreover, only handpicking 3 youtubers per category <strong>might not be a good representation of the whole category</strong> in general as well. For e.g. other large food channels like "The Best Ever Food Review Show" could be different from "Mark Wiens", and have a high engagement with high upload frequency. If we had used this channel instead, we could have come to different conclusions.</p>
+   <p style="text-align: left;"><em>4. Dated Data</em></p>
+   <p style="text-align: left;">Some channels, such as Sam O'Nella Academy, have been <strong>inactive for several years</strong>. As a result, the findings based on these channels may <strong>not be applicable to newer or more active channels</strong> within the same category.</p>
+   <p style="text-align: left;"><em>5. Calculation of Metrics</em></p>
+   <p style="text-align: left;">The metric days between uploads is calculated as the <strong>average time between video upload dates</strong>.<br><br>If a channel uploads a large batch of videos at once and then remains inactive for an extended period, the <strong>inconsistency in upload patterns is not captured accurately</strong> by the graphs. This could lead to <strong>misleading conclusions</strong> about the relationship between upload frequency and engagement.
+   </div>
+   <div class="container" style="padding-top: 24px; padding-bottom: 10px;">
+   <h1><strong>Final Takeaway:</strong></h1>
+   <p>Despite the various potential pitfalls in the analysis of the data, we can come to the general conclusion that a <strong>successful YouTube strategy depends on balancing channel size, content quality, and engagement</strong> rather than relying solely on frequent uploads or a large subscriber base. Different content categories respond differently to these factors, emphasizing the need for <strong>tailored approaches per category</strong>. However, further research can be done to <strong>explore other forms of content on Youtube </strong> that is affecting engagement of newer channels as well e.g. Youtube Shorts</p>
+   </div>
+</div>
+
+<!-- Timeline -->
+<div class="clearfix"></div>
+<div class="even-section" style="padding: 50px 0px;" id="timeline">
+  <h1><strong>Timeline</strong></h1>
+  <div style="position: relative;">
+    <img src="timeline.png" alt="timeline" 
+         style="width: 80%; min-height: 350px; max-height: 800px; display: block; margin: auto; padding: 20px 20px">
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="container odd-section" style="padding: 50px 0px;" id="team">
+  <h1><strong>The Team</strong></h1>
+
+<div style=" display: flex; justify-content: space-between; gap: 10px;"><br>
+
+<div class="quarter team">
+  <img src="quan_pic.jpg" alt="Quan" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;" class="circle">
+  <h2><strong>Quan</strong></h2>
+  <p><em>Data Collection</em></p>
+</div>
+
+<div class="quarter team">
+  <img src="srini_pic.jpg" alt="Srini" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;" class="circle">
+  <h2><strong>Srini</strong></h2>
+  <p><em>Data Processing/Web Designer</em></p>
+</div>
+
+<div class="quarter team">
+  <img src="mingzhu_pic.jpg" alt="Mingzhu" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;" class="circle">
+  <h2><strong>Mingzhu</strong></h2>
+  <p><em>Data Visualisation</em></p>
+</div>
+
+<div class="quarter team">
+  <img src="shoron_pic.jpg" alt="Shoron" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;" class="circle">
+  <h2><strong>Shoron</strong></h2>
+  <p><em>Overall Repository Structure</em></p>
+</div>
+
+</div>
+</div>
+
+<!-- Acknowledgements -->
+<div class="quarter even-section">
+<h1><strong>Acknowledgements</strong></h1>
+<p>I would like to express my sincere gratitude to the DS105A Course for an enriching learning experience.<br> Special thanks to Jon Cardoso-Silva, and the rest of the DS105A team (Riya Chhikara, Alex Soldatkin, Kevin Kittoe, and Sara Luxmoore) for their guidance and support throughout the course :).</p>
+</div>
